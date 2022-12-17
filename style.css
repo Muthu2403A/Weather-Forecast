@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+.container{
+    background-color: coral;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 100px 200px;
+}
+
+#heading{
+    color: yellow;
+
+}
+
+input[type="text"]
+{
+    margin-top: 8px;
+    height: 3rem;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #e7e7e9;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+input:focus{
+    background-color: #fff;
+    color: #495057;
+    border-bottom: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(53, 147, 247, 0.25);
+}
+
+input[type="button"]{
+    background-color: #0f0f0e;
+    height: 3.2rem;
+    width: 280px;
+    color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.result{
+    color: #e7e7e9;
+    
+}
+.msg {
+    margin-top: 1.8em;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  @media screen and (max-width: 450px) {
+    .wrapper {
+      font-size: 14px;
+    }
+  }
+
+  .weather,
+.desc {
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 2em;
+}
+.weather {
+  margin-top: -0.7em;
+}
+#result img {
+  margin: 0.6em 0 0 0;
+  width: 6.2em;
+  filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+}
+#result h1 {
+  font-size: 4em;
+  margin: 0.3em 0 0.7em 0;
+  line-height: 0;
+  font-weight: 400;
+  color: var(--white);
+}
+.temp-container {
+  display: flex;
+  justify-content: center;
+}
+.temp-container div {
+  padding: 0.3em 1em;
+}
+.temp-container div:first-child {
+  border-right: 1px solid var(--transp-white-1);
+}
+.temp-container .title {
+  font-weight: 600;
+  color: var(--white);
+}
+.temp-container .temp {
+  font-weight: 300;
+  color: var(--off-white);
+}
